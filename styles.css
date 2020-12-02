@@ -1,0 +1,260 @@
+/* Grid system */
+.grid-piece{
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: #000000 1px solid;
+}
+.grid-1{
+    top: 0;
+    left: 0;
+}
+.collumn{
+    top: 0;
+    position: absolute;
+}
+.collumn-2{
+    margin-left: 100px;
+}
+.collumn-3{
+    margin-left: 200px;
+}
+.collumn-4{
+    margin-left: 300px;
+}
+.collumn-5{
+    margin-left: 400px;
+}
+.collumn-6{
+    margin-left: 500px;
+}
+.collumn-7{
+    margin-left: 600px;
+}
+.collumn-8{
+    margin-left: 700px;
+}
+.collumn-9{
+    margin-left: 800px;
+}
+.collumn-10{
+    margin-left: 900px;
+}
+.collumn-11{
+    margin-left: 1000px;
+}
+.collumn-12{
+    margin-left: 1100px;
+}
+.collumn-13{
+    margin-left: 1200px;
+}
+.collumn-14{
+    margin-left: 1300px;
+}
+.collumn-15{
+    margin-left: 1400px;
+}
+.collumn-16{
+    margin-left: 1500px;
+}
+.collumn-17{
+    margin-left: 1600px;
+}
+.collumn-18{
+    margin-left: 1700px;
+}
+.collumn-19{
+    margin-left: 1800px;
+}
+.collumn-20{
+    margin-left: 1900px;
+}
+/* general */
+.background{
+    width: 2000px;
+    height: 1900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* buildings */
+.buildings-bar{
+    width: 60%;
+    position: fixed;
+    height: 100px;
+    background-color: yellow;
+    bottom: 0;
+}
+.wood-harvester,.stone-harvester,.gold-harvester,.tower{
+    height: 100px;
+    width: 100px;
+    opacity: 0.6;
+}
+#HQ{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+/* materials */
+.materials-bar{
+    position: fixed;
+    height: 100px;
+    width: 50%;
+    top: 0;
+    right: 0;
+}
+.mats{
+    width: 100px;
+    height: 100px;
+}
+.mats-count{
+    display: inline;
+    position: relative;
+    bottom: 50px;
+    margin: 10px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+/* enemy */
+.enemy{
+    width: 50px;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+/* Arrow */
+.arrow{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 3;
+}
+/* loose elements */
+.loose-heading{
+    color: #ffffff;
+    font-family: sans-serif;
+    margin-top: 20px;
+    font-size: 50px;
+}
+.loose-container{
+    background-color: #00FF7F;
+    border-radius: 20px;
+    height: 50%;
+    width: 50%;
+    position: fixed;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+    z-index: 5;
+}
+.restart-btn{
+    margin-right: 50px;
+}
+.home-btn{
+    margin-left: 50px;
+}
+/* home page */
+.home-heading{
+    color: #ffffff;
+    font-family: sans-serif;
+    margin-top: 100px;
+    font-size: 100px;
+}
+.fas,.far{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.container{
+    margin: 0;
+    left: 0;
+    top: 0;
+    background-color: #00FF7F;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+.play-btn{
+    font-size: 50px;
+    margin-right: 50px;
+}
+.question-btn{
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+/* how to play */
+.htp-container{
+    top: 15%;
+    background-color: #00FF7F;
+    height: 70%;
+    z-index: 2;
+}
+.hidden{
+    display: none;
+}
+.overlay{
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.close-btn{
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.copyright{
+    position: absolute;
+    left: 45%;
+    bottom: 1px;
+}
+body{
+    background-color: green;
+}
+/* material-costs */
+.mats-label{
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.wood-label{
+    color: saddlebrown;
+}
+.stone-label{
+    color: grey;
+}
+.gold-label{
+    color: gold;
+}
+.costs-container{
+    width: 100px;
+    height: 50px;
+    background-color: #00FF7F;
+    position: absolute;
+    bottom: 100px;
+}
+.wood-costs{
+    left: 0;
+}
+.stone-costs{
+    left: 100px;
+}
+.gold-costs{
+    left: 200px;
+}
+.tower-costs{
+    left: 300px;
+}
