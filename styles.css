@@ -81,16 +81,19 @@
 }
 /* buildings */
 .buildings-bar{
+    left: 0;
     width: 60%;
     position: fixed;
     height: 100px;
-    background-color: yellow;
-    bottom: 0;
+    background-color: #f9e0ae;
+    bottom: 2px;
+    border-radius: 0 20px 0 0;
 }
 .wood-harvester,.stone-harvester,.gold-harvester,.tower{
-    height: 100px;
-    width: 100px;
-    opacity: 0.6;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    opacity: 1;
 }
 #HQ{
     width: 100px;
@@ -141,7 +144,7 @@
     font-size: 50px;
 }
 .loose-container{
-    background-color: #00FF7F;
+    background-color: #bedcfa;
     border-radius: 20px;
     height: 50%;
     width: 50%;
@@ -227,7 +230,7 @@ body{
 }
 /* material-costs */
 .mats-label{
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
 }
 .wood-label{
@@ -242,7 +245,7 @@ body{
 .costs-container{
     width: 100px;
     height: 50px;
-    background-color: #00FF7F;
+    background-color: #bedcfa;
     position: absolute;
     bottom: 100px;
 }
@@ -257,7 +260,9 @@ body{
 } 
 .tower-costs{
     left: 300px;
+    border-radius: 0 20px 0 0;
 }
+/* bullet positions */
 .bullet-position-0{
   top: 0;
   left:0;
