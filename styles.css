@@ -70,6 +70,9 @@
 .collumn-20{
     margin-left: 1900px;
 }
+body{
+    margin: 0;
+}
 /* general */
 .background{
     width: 2000px;
@@ -86,14 +89,37 @@
     position: fixed;
     height: 100px;
     background-color: #f9e0ae;
-    bottom: 2px;
-    border-radius: 0 20px 0 0;
+    bottom: 0;
+    border-radius: 0 20px 0 0; 
 }
 .wood-harvester,.stone-harvester,.gold-harvester,.tower{
     padding: 10px;
     height: 80px;
     width: 80px;
-    opacity: 1;
+    border-top: solid 3px;
+    border-right: transparent;
+    border-bottom: solid 3px;
+    border-left: solid 3px; 
+}
+.main-wood{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.main-stone{
+    position: fixed;
+    left: 100px;
+    bottom: 0;
+}
+.main-gold{
+    position: fixed;
+    left: 200px;
+    bottom: 0;
+}
+.main-tower{
+    position: fixed;
+    left: 300px;
+    bottom: 0;
 }
 #HQ{
     width: 100px;
@@ -102,20 +128,23 @@
 }
 /* materials */
 .materials-bar{
+    background-color: #f9e0ae;
     position: fixed;
     height: 100px;
-    width: 50%;
+    width: 60%;
     top: 0;
     right: 0;
+    border-radius: 0 0 0 20px;
 }
 .mats{
-    width: 100px;
-    height: 100px;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
 }
 .mats-count{
     display: inline;
     position: relative;
-    bottom: 50px;
+    bottom: 35px;
     margin: 10px;
     font-size: 50px;
     font-family: sans-serif;
@@ -243,8 +272,10 @@ body{
     color: gold;
 }
 .costs-container{
-    width: 100px;
-    height: 50px;
+    border: solid 3px;
+    padding: 5px 10px;
+    width: 94px;
+    height: 40px;
     background-color: #bedcfa;
     position: absolute;
     bottom: 100px;
@@ -258,7 +289,7 @@ body{
 .gold-costs{
     left: 200px;
 } 
-.tower-costs{
+.tower-costs{   
     left: 300px;
     border-radius: 0 20px 0 0;
 }
