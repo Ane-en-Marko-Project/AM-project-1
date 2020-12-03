@@ -1,8 +1,8 @@
 /* Grid system */
 .grid-piece{
     background-color: transparent;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: #000000 1px solid;
 }
 .grid-1{
@@ -14,69 +14,69 @@
     position: absolute;
 }
 .collumn-2{
-    margin-left: 100px;
+    margin-left: 50px;
 }
 .collumn-3{
-    margin-left: 200px;
+    margin-left: 100px;
 }
 .collumn-4{
-    margin-left: 300px;
+    margin-left: 150px;
 }
 .collumn-5{
-    margin-left: 400px;
+    margin-left: 200px;
 }
 .collumn-6{
-    margin-left: 500px;
+    margin-left: 250px;
 }
 .collumn-7{
-    margin-left: 600px;
+    margin-left: 300px;
 }
 .collumn-8{
-    margin-left: 700px;
+    margin-left: 350px;
 }
 .collumn-9{
-    margin-left: 800px;
+    margin-left: 400px;
 }
 .collumn-10{
-    margin-left: 900px;
+    margin-left: 450px;
 }
 .collumn-11{
-    margin-left: 1000px;
+    margin-left: 500px;
 }
 .collumn-12{
-    margin-left: 1100px;
+    margin-left: 550px;
 }
 .collumn-13{
-    margin-left: 1200px;
+    margin-left: 600px;
 }
 .collumn-14{
-    margin-left: 1300px;
+    margin-left: 650px;
 }
 .collumn-15{
-    margin-left: 1400px;
+    margin-left: 700px;
 }
 .collumn-16{
-    margin-left: 1500px;
+    margin-left: 750px;
 }
 .collumn-17{
-    margin-left: 1600px;
+    margin-left: 800px;
 }
 .collumn-18{
-    margin-left: 1700px;
+    margin-left: 850px;
 }
 .collumn-19{
-    margin-left: 1800px;
+    margin-left: 900px;
 }
 .collumn-20{
-    margin-left: 1900px;
+    margin-left: 950px;
 }
 body{
     margin: 0;
 }
 /* general */
 .background{
-    width: 2000px;
-    height: 1900px;
+    width: 1000px;
+    height: 1000px;
     position: absolute;
     top: 0;
     left: 0;
@@ -93,13 +93,14 @@ body{
     border-radius: 0 20px 0 0; 
 }
 .wood-harvester,.stone-harvester,.gold-harvester,.tower{
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+}
+.main-wood,.main-stone,.main-gold,.main-tower{
     padding: 10px;
     height: 80px;
     width: 80px;
-    border-top: solid 3px;
-    border-right: transparent;
-    border-bottom: solid 3px;
-    border-left: solid 3px; 
 }
 .main-wood{
     position: fixed;
@@ -122,8 +123,8 @@ body{
     bottom: 0;
 }
 #HQ{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     position: absolute;
 }
 /* materials */
@@ -151,7 +152,7 @@ body{
 }
 /* enemy */
 .enemy{
-    width: 50px;
+    width: 25px;
     border-radius: 100px;
     top: 0;
     left: 0;
@@ -160,8 +161,8 @@ body{
 }
 /* Arrow */
 .arrow{
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     position: absolute;
     z-index: 3;
 }
@@ -292,21 +293,4 @@ body{
 .tower-costs{   
     left: 300px;
     border-radius: 0 20px 0 0;
-}
-/* bullet positions */
-.bullet-position-0{
-  top: 0;
-  left:0;
-}
-.bullet-position-1{
-    top: 0;
-    right:0;
-}
-.bullet-position-2{
-    bottom: 0;
-    right:0;
-}
-.bullet-position-3{
-    bottom: 0;
-    left:0;
 }

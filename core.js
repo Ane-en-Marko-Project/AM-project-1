@@ -80,13 +80,13 @@ function gameloop(){
     else{
         looseHandler()
     }
-    data.materials.wood += data.harvestingRates.wood/100;
+    data.materials.wood += data.harvestingRates.wood/50;
     $(".wood-count").text(Math.floor(data.materials.wood));
 
-    data.materials.stone += data.harvestingRates.stone/100;
+    data.materials.stone += data.harvestingRates.stone/50;
     $(".stone-count").text(Math.floor(data.materials.stone));
 
-    data.materials.gold += data.harvestingRates.gold/100;
+    data.materials.gold += data.harvestingRates.gold/50;
     $(".gold-count").text(Math.floor(data.materials.gold));
 
     data.enemies.forEach(function(current){
@@ -126,8 +126,8 @@ function gameloop(){
             let ID = data.randomWord();
             let position = current.position;
             $("body").prepend('<img id="'+ID+'" class="arrow" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqxOOeTKinvlPQGBbEGH1i5oHjF72NiVB7FQ&usqp=CAU" alt="">');
-            document.querySelector("#"+ID).style.top = (position.row*100)+"px";
-            document.querySelector("#"+ID).style.left = (position.collumn*100)+"px";
+            document.querySelector("#"+ID).style.top = (position.row*50)+"px";
+            document.querySelector("#"+ID).style.left = (position.collumn*50)+"px";
             data.bullets.push(new Bullet(ID,position));
         });
         //maak n bullet vir die HQ
@@ -135,8 +135,8 @@ function gameloop(){
         let position = {row:10,collumn:10}
         $("body").prepend('<img id="'+ID+'" class="arrow" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqxOOeTKinvlPQGBbEGH1i5oHjF72NiVB7FQ&usqp=CAU" alt="">');
         // console.log(document.querySelector("#"+ID).style.top);
-        document.querySelector("#"+ID).style.top = (position.row*100)+"px";
-        document.querySelector("#"+ID).style.left = (position.collumn*100)+"px";
+        document.querySelector("#"+ID).style.top = (position.row*50)+"px";
+        document.querySelector("#"+ID).style.left = (position.collumn*50)+"px";
         // console.log(document.querySelector("#"+ID).style);
         data.bullets.push(new Bullet(ID,position));
     }
@@ -279,8 +279,8 @@ function enemyAI(enemyID){
     let left = parseFloat($("#"+enemyID).css("left"));
     //console.log($("#"+enemyID).css("top"));
     // gebruik top en left * 100 om position met die grid te sync
-    let row = (top/100)+0.5;
-    let collumn = (left/100)+0.5;
+    let row = (top/50)+0.5;
+    let collumn = (left/50)+0.5;
     let total = row + collumn;
     data.enemies.forEach(function(current,index){
         if(current.ID===enemyID){
@@ -349,22 +349,22 @@ function enemyAI(enemyID){
         //gaan sekere hoeveelheid px nader aan naaste gebou
         if(row>least.position.row){
             //beweeg boontoe
-            top -= 2
+            top -= 1
             document.querySelector("#"+enemyID).style.top = top+"px";
         }
         if(row<least.position.row){
             //beweeg ondertoe
-            top += 2
+            top += 1
             document.querySelector("#"+enemyID).style.top = top+"px";
         }
         if(collumn>least.position.collumn){
             //beweeg links
-            left -= 2
+            left -= 1
             document.querySelector("#"+enemyID).style.left = left+"px";
         }
         if(collumn<least.position.collumn){
             //beweeg regs
-            left += 2
+            left += 1
             document.querySelector("#"+enemyID).style.left = left+"px";
         }
     }
@@ -384,8 +384,8 @@ function bulletAI(bullet){
     //werk eie position uit
     let top = parseFloat(document.querySelector("#"+bullet.ID).style.top);
     let left = parseFloat(document.querySelector("#"+bullet.ID).style.left); 
-    let row = top/100+0.5;
-    let collumn = left/100+0.5;
+    let row = top/50+0.5;
+    let collumn = left/50+0.5;
     let total = row+collumn;
     //kry naaste enemie
     //closest is die naaste enemie
@@ -439,22 +439,22 @@ function bulletAI(bullet){
     let ID = "#"+bullet.ID;
     if(row>closest.row){
         //beweeg boontoe
-        top -= 6;
+        top -= 3;
         document.querySelector(ID).style.top = top+"px";
     }
     if(row<closest.row){
         //beweeg ondertoe
-        top += 6
+        top += 3
         document.querySelector(ID).style.top = top+"px";
     }
     if(collumn>closest.collumn){
         //beweeg links
-        left -= 6
+        left -= 3
         document.querySelector(ID).style.left = left+"px";
     }
     if(collumn<closest.collumn){
         //beweeg regs
-        left += 6
+        left += 3
         document.querySelector(ID).style.left = left+"px";
     }
 }
