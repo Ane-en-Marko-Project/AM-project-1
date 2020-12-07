@@ -3,94 +3,98 @@
     background-color: transparent;
     width: 50px;
     height: 50px;
-    border: #000000 1px solid;
 }
 .grid-1{
-    top: 0;
+    margin-top: 100px;
     left: 0;
 }
 .collumn{
     top: 0;
     position: absolute;
 }
+.collumn-1{
+    margin-left: 218px;
+}
 .collumn-2{
-    margin-left: 50px;
+    margin-left: 268px;
 }
 .collumn-3{
-    margin-left: 100px;
+    margin-left: 318px;
 }
 .collumn-4{
-    margin-left: 150px;
+    margin-left: 368px;
 }
 .collumn-5{
-    margin-left: 200px;
+    margin-left: 418px;
 }
 .collumn-6{
-    margin-left: 250px;
+    margin-left: 468px;
 }
 .collumn-7{
-    margin-left: 300px;
+    margin-left: 518px;
 }
 .collumn-8{
-    margin-left: 350px;
+    margin-left: 568px;
 }
 .collumn-9{
-    margin-left: 400px;
+    margin-left: 618px;
 }
 .collumn-10{
-    margin-left: 450px;
+    margin-left: 668px;
 }
 .collumn-11{
-    margin-left: 500px;
+    margin-left: 718px;
 }
 .collumn-12{
-    margin-left: 550px;
+    margin-left: 768px;
 }
 .collumn-13{
-    margin-left: 600px;
+    margin-left: 818px;
 }
 .collumn-14{
-    margin-left: 650px;
+    margin-left: 868px;
 }
 .collumn-15{
-    margin-left: 700px;
+    margin-left: 918px;
 }
 .collumn-16{
-    margin-left: 750px;
+    margin-left: 968px;
 }
 .collumn-17{
-    margin-left: 800px;
+    margin-left: 1018px;
 }
 .collumn-18{
-    margin-left: 850px;
+    margin-left: 1068px;
 }
 .collumn-19{
-    margin-left: 900px;
+    margin-left: 1118px;
 }
 .collumn-20{
-    margin-left: 950px;
+    margin-left: 1168px;
 }
 body{
     margin: 0;
+    background-color: #bedcfa;
 }
 /* general */
 .background{
-    width: 1000px;
-    height: 1000px;
+    width: 1002px;
+    height: 988px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 100px;
+    left: 218px;
     z-index: -1;
+    border-radius: 10px;
 }
 /* buildings */
 .buildings-bar{
-    left: 0;
-    width: 60%;
+    right: 0;
+    width: 220px;
     position: fixed;
-    height: 100px;
+    height: 55%;
     background-color: #f9e0ae;
     bottom: 0;
-    border-radius: 0 20px 0 0; 
+    border-radius: 20px 0 0 0; 
 }
 .wood-harvester,.stone-harvester,.gold-harvester,.tower{
     padding: 5px;
@@ -104,22 +108,22 @@ body{
 }
 .main-wood{
     position: fixed;
-    left: 0;
-    bottom: 0;
+    right: 110px;
+    bottom: 300px;
 }
 .main-stone{
     position: fixed;
-    left: 100px;
-    bottom: 0;
+    right: 110px;
+    bottom: 200px;
 }
 .main-gold{
     position: fixed;
-    left: 200px;
-    bottom: 0;
+    right: 110px;
+    bottom: 100px;
 }
 .main-tower{
     position: fixed;
-    left: 300px;
+    right: 110px;
     bottom: 0;
 }
 #HQ{
@@ -192,41 +196,94 @@ body{
 }
 /* home page */
 .home-heading{
-    color: #ffffff;
-    font-family: sans-serif;
-    margin-top: 100px;
-    font-size: 100px;
+    color: #222831;
+    font-family: 'Bree Serif', serif;
+    margin-top: 110px;
+    margin-left: 25px;
+    font-size: 50px;
+    line-height: 1.6;   
 }
-.fas,.far{
+.goldmine{
+    font-family:'Chakra Petch', sans-serif;
+    margin-top: -20px;
+    margin-left: 25px;
     font-size: 30px;
-    color: #fff;
+    color: #825959;
+}
+.goldarrow{
+    height: 40px;
+    width: 30px;
+}
+.far{
+    margin-left: 90px;
+    margin-top: 50px;
+    color: #f2dcbb;
+    text-decoration: none;
+}
+.far:hover{
+    margin-left: 90px;
+    margin-top: 50px;
+    color: #c6b497;
+    text-decoration: none;
+}
+.fas{
+    color: #f2dcbb;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 190px;
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.fas:hover{
+    color: #96bb7c;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 190px;
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
 }
 .container{
+    background-color: #f8f7de;
+    z-index: -2;
     margin: 0;
     left: 0;
-    top: 0;
-    background-color: #00FF7F;
+    top: 0; 
     width: 100%;
     height: 100%;
     position: absolute;
     text-align: center;
 }
+.hq-pic{
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    z-index: -1;
+    width: 1000px;
+    height: 750px;
+
+}
 .play-btn{
-    font-size: 50px;
+    font-size: 100px;
     margin-right: 50px;
 }
 .question-btn{
+    position: absolute;
+    margin-left: 190px;
     font-size: 50px;
     background-color: transparent;
     border: none;
-    margin-left: 50px;
     cursor: pointer;
 }
 /* how to play */
 .htp-container{
     top: 15%;
-    background-color: #00FF7F;
+    background-color: #99b898;
     height: 70%;
     z-index: 2;
 }
@@ -256,7 +313,7 @@ body{
     bottom: 1px;
 }
 body{
-    background-color: green;
+    z-index: -2;
 }
 /* material-costs */
 .mats-label{
@@ -273,24 +330,26 @@ body{
     color: gold;
 }
 .costs-container{
-    border: solid 3px;
-    padding: 5px 10px;
-    width: 94px;
+    border: solid 2px;
+    padding: 5px;
+    width: 85px;
     height: 40px;
     background-color: #bedcfa;
     position: absolute;
-    bottom: 100px;
 }
 .wood-costs{
-    left: 0;
+    right: 5px;
+    bottom: 320px;
 }
 .stone-costs{
-    left: 100px;
+    right: 5px;
+    bottom: 220px;
 }
 .gold-costs{
-    left: 200px;
+    right: 5px;
+    bottom: 120px;
 } 
 .tower-costs{   
-    left: 300px;
-    border-radius: 0 20px 0 0;
+    right: 5px;
+    bottom: 20px;
 }
